@@ -72,9 +72,9 @@
 
 			if (this.options.top !== undefined) {
 				this.$modal.css({'top': this.options.top});
-			}
+			} 
 			
-			if (this.options.fixed !== undefined) {
+			if (this.options.fixed !== undefined) {			
 				this.$modal.addClass('modal-fixed');
 				if (this.options.top !== undefined) {
 					this.$modal.css({'top': $(window).scrollTop() + this.options.top});
@@ -124,6 +124,10 @@
 			this.$modal.hide().off('.' + pluginName).find('.inner').html('');
 			$(document).off('keyup.' + pluginName);
 			$('.modal-backdrop').remove();
+			if (typeof this.options.fixed !== undefined) {
+				this.$modal.css({'top': ''});
+				this.$modal.removeClass('modal-fixed');
+			}
 			if (typeof this.options.onClose === 'function') {
 				this.options.onClose.call(this, this.options);
 			}
