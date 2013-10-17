@@ -39,7 +39,7 @@
 			
 			
 			
-			$this.wrap('<div class="' + opts.wrapperCss + ' ' + opts.infinate + '"></div>');
+			$this.wrap('<div class="' + opts.wrapperCss + ' ' + opts.infinite + '"></div>');
 			
 		
 			
@@ -124,7 +124,7 @@
 	$.fn[pluginName].defaults = {
 		wrapperCss: 'number-reel'
 		, currency: '$'
-		, infinate: 'infinate'
+		, infinite: 'infinite'
 		, reelFace: 9  //must be a positive integer 9
 		, seperator: 'thousand'  // 'thousand','hundred' or false
 	};
