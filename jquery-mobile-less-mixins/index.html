@@ -1,0 +1,155 @@
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Devben.github.io : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+    
+    
+
+    <title>Devben.github.io jquery-mobile-less-mixins</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+        <style type="text/css">
+        .svg-test .ui-btn {
+            float: left;
+            margin: .25em;
+        }
+        blockquote {
+            font-family: "Courier New", Courier, monospace;
+            padding: 8px 14px;
+            background: #333;
+            text-shadow: none;
+            border-radius: .2em;
+            border: 1px solid #000;
+            font-size: 1.1em;
+            letter-spacing: .05em;
+            line-height: 1.5em;
+        }
+        code::selection {color:#fff;background:#e64632;}
+        code::-moz-selection {color:#fff;background:#e64632;}
+        code {
+            padding: 0;
+            margin: 0;
+            border: none;
+            box-shadow: none;
+            background: none;
+            color: #fff;
+        }
+        code.item {
+            color: #e64632
+        }
+         code.item2 {
+            color: #b174e6
+        }
+        code.value {
+            color: #92D12F;
+        }
+        code.string {
+            color: #dbd34b;
+        }
+        </style>
+    <link rel="stylesheet/less" type="text/css" href="svg.less" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+    
+
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+  
+    
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/devben">View on GitHub</a>
+
+          <h1 id="project_title">jquery-mobile-less-mixins</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+    
+            <h1>svg icons</h1>
+ 
+            <br>  
+            <blockquote>
+                <code class="item2">@import</code> <code class="string">"mixins/jquery.mobile.svg-icons.mixin.less"</code><code>;</code><br>
+            <code class="item">.svg-icon</code><code>(</code><code class="value">@COLOR</code><code>);</code>
+            </blockquote>
+            <div class="ui-content">
+           
+            <div class="svg-test">
+                <button class="ui-btn ui-icon-action ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">action</button>
+                <button class="ui-btn ui-icon-alert ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">alert</button>
+                <button class="ui-btn ui-icon-arrow-d ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">arrow-d</button>
+                <button class="ui-btn ui-icon-arrow-d-l ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">arrow-d-l</button>
+                <button class="ui-btn ui-icon-arrow-d-r ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">arrow-d-r</button>
+                <button class="ui-btn ui-icon-arrow-l ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">arrow-l</button>
+                <button class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">arrow-r</button>
+                <button class="ui-btn ui-icon-arrow-u ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">arrow-u</button>
+                <button class="ui-btn ui-icon-arrow-u-l ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">arrow-u-l</button>
+                <button class="ui-btn ui-icon-arrow-u-r ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">arrow-u-r</button>
+                <button class="ui-btn ui-icon-audio ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">audio</button>
+                <button class="ui-btn ui-icon-back ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">back</button>
+                <button class="ui-btn ui-icon-bars ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">bars</button>
+                <button class="ui-btn ui-icon-bullets ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">bullets</button>
+                <button class="ui-btn ui-icon-calendar ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">calendar</button>
+                <button class="ui-btn ui-icon-camera ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">camera</button>
+                <button class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">carat-d</button>
+                <button class="ui-btn ui-icon-carat-l ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">carat-l</button>
+                <button class="ui-btn ui-icon-carat-r ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">carat-r</button>
+                <button class="ui-btn ui-icon-carat-u ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">carat-u</button>
+                <button class="ui-btn ui-icon-check ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">check</button>
+                <button class="ui-btn ui-icon-clock ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">clock</button>
+                <button class="ui-btn ui-icon-cloud ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">cloud</button>
+                <button class="ui-btn ui-icon-comment ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">comment</button>
+                <button class="ui-btn ui-icon-delete ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">delete</button>
+                <button class="ui-btn ui-icon-edit ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">edit</button>
+                <button class="ui-btn ui-icon-eye ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">eye</button>
+                <button class="ui-btn ui-icon-forbidden ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">forbidden</button>
+                <button class="ui-btn ui-icon-forward ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">forward</button>
+                <button class="ui-btn ui-icon-gear ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">gear</button>
+                <button class="ui-btn ui-icon-grid ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">grid</button>
+                <button class="ui-btn ui-icon-heart ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">heart</button>
+                <button class="ui-btn ui-icon-home ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">home</button>
+                <button class="ui-btn ui-icon-info ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">info</button>
+                <button class="ui-btn ui-icon-location ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">location</button>
+                <button class="ui-btn ui-icon-lock ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">lock</button>
+                <button class="ui-btn ui-icon-mail ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">mail</button>
+                <button class="ui-btn ui-icon-minus ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">minus</button>
+                <button class="ui-btn ui-icon-navigation ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">navigation</button>
+                <button class="ui-btn ui-icon-phone ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">phone</button>
+                <button class="ui-btn ui-icon-plus ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">plus</button>
+                <button class="ui-btn ui-icon-power ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">power</button>
+                <button class="ui-btn ui-icon-recycle ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">recycle</button>
+                <button class="ui-btn ui-icon-refresh ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">refresh</button>
+                <button class="ui-btn ui-icon-search ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">search</button>
+                <button class="ui-btn ui-icon-shop ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">shop</button>
+                <button class="ui-btn ui-icon-star ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">star</button>
+                <button class="ui-btn ui-icon-tag ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">tag</button>
+                <button class="ui-btn ui-icon-user ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">user</button>
+                <button class="ui-btn ui-icon-video ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon ui-shadow ui-corner-all">video</button>
+            </div>
+        </div>
+        </section>              
+            
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
