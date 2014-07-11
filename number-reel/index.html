@@ -9,8 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/number-reel.css">
     <title>Devben.github.io number reel</title>
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/number-reel.js"></script>
+   
   </head>
 
   <body>
@@ -31,17 +30,28 @@
         <section id="main_content" class="inner">
     
             <h1>Number Reel Overview</h1>
-            <p>To trigger the number reel just use <strong>data-attributes</strong> <code>data-trigger="numberReel"</code> or <strong>programatically</strong>
+            <p>To trigger the number reel just use <strong>data-attribute</strong> <code>data-trigger="numberReel"</code> or <strong>programatically</strong>
                             <code>el.numberReel</code>.</p>
             <p>The plugin then takes the content, which should be a <strong>number</strong>, and intiallizes the reel. The animation is handled by CSS.</p>
             
             <h3>Example</h3>
-            <div style="padding-bottom: 24px;">
+           <code>data-trigger="numberReel"</code> 
+            <div style="padding: 24px 0;">
              <div data-trigger="numberReel">233242</div>
             </div>
             <pre>&lt;!-- the code --&gt;<br>&lt;div data-trigger="numberReel">233242&lt;/div></pre>
-            <br>                
-            <h3>Options</h3>
+            <br>  
+           <h3>Example</h3> 
+            <code>el.numberReel</code>          
+          
+            <button id="exampleBtn" class="btn">Click Me</button> <em></em>
+                <div style="padding: 24px 0;height:81px;">
+                <div id="example"></div>
+            </div>
+            
+            <pre>&lt;!-- the code --&gt;<br>&lt;div data-trigger="numberReel" data-infinite="true">233242&lt;/div></pre>
+              <h3>Options</h3>
+            <br>  
             <table>
                 <thead>
                     <tr>
@@ -60,9 +70,9 @@
                     </tr>
                     <tr>
                         <td>infinite</td>
-                        <td>string</td>
-                        <td>'infinite'</td>
-                        <td><code>'infinite'</code> animates the numbers continuously with a small delay configurable in the CSS. <code>''</code>, animates only once.</td>
+                        <td>boolean</td>
+                        <td>false</td>
+                        <td><code>true</code> animates the numbers continuously with the addition of <code>.infinite</code>, a small delay is present which is configurable in the CSS. <code>false</code> animates only once.</td>
                     </tr>
                     <tr>
                         <td>reelFace</td>
@@ -208,7 +218,28 @@
       </footer>
     </div>
 
-    
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/number-reel.js"></script>
+    <script type="text/javascript">
+    var example = $('#example');
+     var exampleBtn = $('#exampleBtn')
 
+    exampleBtn.on('click', function(){
+        
+        var number = Math.floor(Math.random() * 9999);
+
+        example.html(pad('0000',number,true)).numberReel();
+        exampleBtn.next('em').html('you can click me over and over');
+    });
+
+    function pad(pad, str, padLeft) {
+      if (str == undefined) return pad;
+      if (padLeft) {
+        return (pad + str).slice(-pad.length);
+      } else {
+        return (str + pad).substring(0, pad.length);
+      }
+    }
+    </script>
   </body>
 </html>

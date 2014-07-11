@@ -1,6 +1,5 @@
 /* ==========================================================
  * number-reel.js
- * http://github.com/terebentina/sco.js
  * ==========================================================
  * Copyright 2013 Ben Harrison.
  *
@@ -35,17 +34,16 @@
 				
 			var  $this = $(this)
 				,html = $this.html()
-				,numbers = html.split('');
+				,numbers = html.split('')
+				,infinite = $this.data('infinite');
 			
-			
-			
-			$this.wrap('<div class="' + opts.wrapperCss + ' ' + opts.infinite + '"></div>');
-			
-		
-			
-			if (opts.currency != '') {
-				$this.parent().append('<div class="reel-container">' + opts.currency + '</div>')
+			if (opts.infinite === true || infinite === true){
+				$this.addClass('infinite');
 			}
+			
+			$this.addClass(opts.wrapperCss);
+			
+			
 			
 			
 			
@@ -84,10 +82,9 @@
 						var altClass = 2
 					}
 					
-					
 					//console.log(reelArr.shuffle().join(""));
 					var reelTmp = '';
-					console.log(reelTmp);
+					//console.log(reelTmp);
 					
 					if (opts.seperator === '') {
 						var reelTmp = $('<div class="reel-' + altClass + '"><i>' + number + '</i>' +  reelArr.shuffle().join("") + '</div>');
@@ -108,26 +105,34 @@
 
 				});
 				
+				if (opts.currency != '') {
+					reelHTML.prepend('<div class="reel-container">' + opts.currency + '</div>')
+				}
+			
 				
 				
 				
 				
-				$this.parent().append(reelHTML);
+				$this.html(reelHTML);
 
 			
-			$this.hide();
 		 });
 	};
+
+
+
 	
 	
-	// Plugin defaults Ð added as a property on our plugin function.
+	// Plugin defaults added as a property on our plugin function.
 	$.fn[pluginName].defaults = {
 		wrapperCss: 'number-reel'
 		, currency: '$'
-		, infinite: 'infinite'
+		, infinite: false
 		, reelFace: 9  //must be a positive integer 9
 		, seperator: 'thousand'  // 'thousand','hundred' or false
 	};
+
+
 		
 
 

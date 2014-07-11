@@ -30,18 +30,18 @@
     font-style: normal;
 }
 .reel-1 {
-    animation: 5s reel-1 linear .5s normal;
-    -moz-animation: 5s reel-1 linear .5s normal;		
-    -ms-animation: 5s reel-1 linear .5s normal;		
-    -o-animation:  5s reel-1 linear .5s normal;		
-    -webkit-animation: 5s reel-1 linear .5s normal;		
+    animation: 5s reel-1 linear normal;
+    -moz-animation: 5s reel-1 linear normal;		
+    -ms-animation: 5s reel-1 linear normal;		
+    -o-animation:  5s reel-1 linear normal;		
+    -webkit-animation: 5s reel-1 linear normal;		
 }
 .reel-2 {
-    animation: 5s reel-2 linear .5s normal;	
-    -moz-animation:5s reel-2 linear .5s normal;		
-    -ms-animation: 5s reel-2 linear .5s normal;	
-    -o-animation: 5s reel-2 linear .5s normal;		
-    -webkit-animation:  5s reel-2 linear .5s normal;	
+    animation: 5s reel-2 linear normal;	
+    -moz-animation:5s reel-2 linear normal;		
+    -ms-animation: 5s reel-2 linear normal;	
+    -o-animation: 5s reel-2 linear normal;		
+    -webkit-animation:  5s reel-2 linear normal;	
 }
 
 .infinite .reel-1,
