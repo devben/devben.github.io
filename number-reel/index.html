@@ -49,7 +49,19 @@
                 <div id="example"></div>
             </div>
             
-            <pre>&lt;!-- the code --&gt;<br>&lt;div data-trigger="numberReel" data-infinite="true">233242&lt;/div></pre>
+            <pre>&lt;!-- the code --&gt;
+&lt;button id="exampleBtn" class="btn">Click Me&lt;/button>
+&lt;div id="example">&lt;/div>
+&lt;script type="text/javascript">
+    var example = $('#example');
+    var exampleBtn = $('#exampleBtn')
+
+    exampleBtn.on('click', function(){
+        var number = Math.floor(Math.random() * 9999);
+        example.html(number).numberReel();
+    });
+
+&lt;/script></pre>
               <h3>Options</h3>
             <br>  
             <table>
@@ -228,18 +240,11 @@
         
         var number = Math.floor(Math.random() * 9999);
 
-        example.html(pad('0000',number,true)).numberReel();
+        example.html(number).numberReel();
         exampleBtn.next('em').html('you can click me over and over');
     });
 
-    function pad(pad, str, padLeft) {
-      if (str == undefined) return pad;
-      if (padLeft) {
-        return (pad + str).slice(-pad.length);
-      } else {
-        return (str + pad).substring(0, pad.length);
-      }
-    }
+
     </script>
   </body>
 </html>
