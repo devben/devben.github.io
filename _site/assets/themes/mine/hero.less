@@ -17,14 +17,23 @@
    // }
 
    h1 {
-    font-size: 48px;
+    font-size: 36px;
     margin: 0px;
     font-weight: bold;
+
+     @media (min-width: @screen-sm) {
+       font-size: 48px;
+     }
    }
 
    h2 {
-    font-size: 22px;
+
+    font-size: 15px;
     margin: 0;
+
+    @media (min-width: @screen-sm) {
+       font-size: 18px;
+     }
    }
 
    a {
@@ -64,11 +73,11 @@
 
   .strapline {
     position: absolute;
-     top:25vh;
+    top:50%;
     text-align: center;
-    margin: 0;
+    margin: -30px 0 0;
     width: 100%;
-    .animation(ease-in-out more-icon 1.6s);
+    .animation(ease-in-out more-icon 1.3s);
 
       // .inner {
         
@@ -117,27 +126,27 @@ background-repeat: no-repeat;
 
 @-webkit-keyframes more-icon {
   0% {
-    top:100vh;
+    top: 120%;
     opacity: 0;
   }
-  70% {
+  40% {
     opacity: 0;
   }
   100%   { 
-    top:25vh;
+    top: 50%;
     opacity: 1;
   }
 }
 @keyframes more-icon {
    0% {
-    top:100vh;
+    top: 120%;
     opacity: 0;
   }
-  70% {
+  40% {
     opacity: 0;
   }
   100%   { 
-    top:25vh;
+    top: 50%;
     opacity: 1;
   }
 }
