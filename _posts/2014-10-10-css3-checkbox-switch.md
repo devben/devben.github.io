@@ -25,7 +25,7 @@ To style the switch we are using `:before`, `:after` pseudo-elements and  `+` ad
     input[type="checkbox"]:checked + label {  
     }
 
-This example also uses **data-attributes** to provide labels via css. In the html we are using `data-switch-on="yes" data-switch-off="no"` and the rendering the content via css using `content: attr(data-switch-on);` and `content: attr(data-switch-off);`.
+This example also uses **data-attributes** to provide labels (on/off) to the switches via css. In the html we are using `data-switch-on="yes" data-switch-off="no"` and the rendering the content via css using `content: attr(data-switch-on);` and `content: attr(data-switch-off);`.
 
 
 <div class="toggle-switch-container">

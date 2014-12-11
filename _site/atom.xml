@@ -4,7 +4,7 @@
  <title>DevBen</title>
  <link href="http://devben.github.io/" rel="self"/>
  <link href="http://devben.github.io"/>
- <updated>2014-12-11T21:33:12+01:00</updated>
+ <updated>2014-12-11T21:40:04+01:00</updated>
  <id>http://devben.github.io</id>
  <author>
    <name>Ben Harrison</name>
@@ -31,7 +31,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This example also uses &lt;strong&gt;data-attributes&lt;/strong&gt; to provide labels via css. In the html we are using &lt;code&gt;data-switch-on=&quot;yes&quot; data-switch-off=&quot;no&quot;&lt;/code&gt; and the rendering the content via css using &lt;code&gt;content: attr(data-switch-on);&lt;/code&gt; and &lt;code&gt;content: attr(data-switch-off);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This example also uses &lt;strong&gt;data-attributes&lt;/strong&gt; to provide labels (on/off) to the switches via css. In the html we are using &lt;code&gt;data-switch-on=&quot;yes&quot; data-switch-off=&quot;no&quot;&lt;/code&gt; and the rendering the content via css using &lt;code&gt;content: attr(data-switch-on);&lt;/code&gt; and &lt;code&gt;content: attr(data-switch-off);&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;toggle-switch-container&quot;&gt;
   &lt;input id=&quot;switchToggle4&quot; class=&quot;toggle-switch toggle-switch-wide&quot; type=&quot;checkbox&quot; /&gt;
