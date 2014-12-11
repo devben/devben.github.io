@@ -18,7 +18,7 @@ customcss:
 </div>
 
 
-Pure CSS3 check boxes, there is no javascript in this example and shuould work in IE9 +. There are many great examples of CSS3 checkboxes out there [^fn-css3-checkbox-examples] and this is just another one.
+Pure CSS3 check boxes, there is no javascript in this example and it should work in IE9 and above. There are many great examples of CSS3 checkboxes out there [^fn-css3-checkbox-examples] and this is just another one.
 
 To style the switch we are using `:before`, `:after` pseudo-elements and  `+` adjacent sibling selector. Then using the `:checked` pseudo selector we can update the styles depending on the checkbox state.
 

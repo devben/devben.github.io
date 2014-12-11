@@ -4,7 +4,7 @@
  <title>DevBen</title>
  <link href="http://devben.github.io/" rel="self"/>
  <link href="http://devben.github.io"/>
- <updated>2014-12-11T19:15:17+01:00</updated>
+ <updated>2014-12-11T19:59:40+01:00</updated>
  <id>http://devben.github.io</id>
  <author>
    <name>Ben Harrison</name>
@@ -23,7 +23,7 @@
   &lt;label for=&quot;switchToggle&quot; data-switch-on=&quot;on&quot; data-switch-off=&quot;off&quot;&gt;&lt;/label&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Pure CSS3 check boxes, there is no javascript in this example and shuould work in IE9 +. There are many great examples of CSS3 checkboxes out there &lt;sup id=&quot;fnref:fn-css3-checkbox-examples&quot;&gt;&lt;a href=&quot;#fn:fn-css3-checkbox-examples&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and this is just another one.&lt;/p&gt;
+&lt;p&gt;Pure CSS3 check boxes, there is no javascript in this example and it should work in IE9 and above. There are many great examples of CSS3 checkboxes out there &lt;sup id=&quot;fnref:fn-css3-checkbox-examples&quot;&gt;&lt;a href=&quot;#fn:fn-css3-checkbox-examples&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and this is just another one.&lt;/p&gt;
 
 &lt;p&gt;To style the switch we are using &lt;code&gt;:before&lt;/code&gt;, &lt;code&gt;:after&lt;/code&gt; pseudo-elements and  &lt;code&gt;+&lt;/code&gt; adjacent sibling selector. Then using the &lt;code&gt;:checked&lt;/code&gt; pseudo selector we can update the styles depending on the checkbox state.&lt;/p&gt;
 
