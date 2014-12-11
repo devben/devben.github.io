@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/ben/dev/github/devben.github.io"
+		}
+	],
+    "settings": {
+        "less2css": {
+            "autoCompile": false //using 
+
+        }
+    }
+}

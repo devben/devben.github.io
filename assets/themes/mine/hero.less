@@ -1,0 +1,143 @@
+.hero-index {
+    height: 40vw;
+    //max-height: 40vh;
+    // display: flex;
+    // align-items:center;
+    // justify-content:center;
+   color: #fff;
+   position: relative;
+
+   @media (min-width: @screen-lg) {
+      height: 36vw;
+   }
+
+
+   // h1,h2 {
+   //  .skew(22.5deg,0);
+   // }
+
+   h1 {
+    font-size: 48px;
+    margin: 0px;
+    font-weight: bold;
+   }
+
+   h2 {
+    font-size: 22px;
+    margin: 0;
+   }
+
+   a {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    bottom:10px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: fade(#fff, 30%);
+    color: fade(#000, 40%);
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 2px;
+    text-decoration: none;
+    transition: all .35s;
+    .animation(ease-in-out more-icon 2s);
+
+    .glyphicon {
+      display: block;
+      line-height: 38px;
+    }
+
+    &:hover {
+      background-color: fade(#fff, 40%);
+      color: fade(#000, 60%);
+      box-shadow: 1px 1px 5px 2px fade(#000, 10%);
+    }
+  }
+
+
+// @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
+//  }
+
+  .strapline {
+    position: absolute;
+     top:25vh;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    .animation(ease-in-out more-icon 1.6s);
+
+      // .inner {
+        
+      //   padding: 5px 30px 2px;
+      //   background: @brand-primary;
+      //   display: inline-block;
+      //   .skew(-22.5deg,0);
+      //   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+      // }
+
+      //   span {
+      //       font-size: 24px;
+      //       padding-left: 50px;
+      //   }
+   }
+}
+
+
+.homepage {
+     background: url('/assets/images/macbook45.jpg');
+   // background-size: cover;
+   // background-attachment: fixed;
+   background-size: 100%;
+background-attachment: fixed;
+background-position: center 0px;
+background-repeat: no-repeat;
+
+  @media (min-width: @screen-lg) {
+    background-position: center -20px;
+
+    }
+
+   .container-outer {
+    background: #fff;
+   }
+}
+
+#wrap  .container-outer {
+    min-height: 40vh;
+    padding-bottom: 40px;
+   }
+
+#footer {
+    background: #f7f7f7;
+}
+
+@-webkit-keyframes more-icon {
+  0% {
+    top:100vh;
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100%   { 
+    top:25vh;
+    opacity: 1;
+  }
+}
+@keyframes more-icon {
+   0% {
+    top:100vh;
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100%   { 
+    top:25vh;
+    opacity: 1;
+  }
+}

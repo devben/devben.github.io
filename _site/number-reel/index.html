@@ -1,0 +1,250 @@
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Devben.github.io : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+    
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/number-reel.css">
+    <title>Devben.github.io number reel</title>
+    
+   
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/devben">View on GitHub</a>
+
+          <h1 id="project_title">Number Reel</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+    
+            <h1>Number Reel Overview</h1>
+            <p>To trigger the number reel just use <strong>data-attribute</strong> <code>data-trigger="numberReel"</code> or <strong>programatically</strong>
+                            <code>el.numberReel</code>.</p>
+            <p>The plugin then takes the content, which should be a <strong>number</strong>, and intiallizes the reel. The animation is handled by CSS.</p>
+            
+            <h3>Example</h3>
+           <code>data-trigger="numberReel"</code> 
+            <div style="padding: 24px 0;">
+             <div data-trigger="numberReel">233242</div>
+            </div>
+            <pre>&lt;!-- the code --&gt;<br>&lt;div data-trigger="numberReel">233242&lt;/div></pre>
+            <br>  
+           <h3>Example</h3> 
+            <code>el.numberReel</code>          
+          
+            <button id="exampleBtn" class="btn">Click Me</button> <em></em>
+                <div style="padding: 24px 0;height:81px;">
+                <div id="example"></div>
+            </div>
+            
+            <pre>&lt;!-- the code --&gt;
+&lt;button id="exampleBtn" class="btn">Click Me&lt;/button>
+&lt;div id="example">&lt;/div>
+&lt;script type="text/javascript">
+    var example = $('#example');
+    var exampleBtn = $('#exampleBtn')
+
+    exampleBtn.on('click', function(){
+        var number = Math.floor(Math.random() * 9999);
+        example.html(number).numberReel();
+    });
+
+&lt;/script></pre>
+              <h3>Options</h3>
+            <br>  
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 100px;">Name</th>
+                        <th style="width: 80px;">type</th>
+                        <th style="width: 80px;">default</th>
+                        <th>description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>currency</td>
+                        <td>string</td>
+                        <td>'$'</td>
+                        <td>Prepend a currecy symbol or any string. <code>''</code>, prepends NULL</td>
+                    </tr>
+                    <tr>
+                        <td>infinite</td>
+                        <td>boolean</td>
+                        <td>false</td>
+                        <td><code>true</code> animates the numbers continuously with the addition of <code>.infinite</code>, a small delay is present which is configurable in the CSS. <code>false</code> animates only once.</td>
+                    </tr>
+                    <tr>
+                        <td>reelFace</td>
+                        <td>number</td>
+                        <td>9</td>
+                        <td>appends X other numbers, in a random order, to use in the animation</td>
+                    </tr>
+                    <tr>
+                        <td>seperator</td>
+                        <td>string</td>
+                        <td>'thousand'</td>
+                        <td><code>'thousand'</code> animates the numbers continuously with a small delay configurable in the CSS. <code>''</code>, animates only once.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h3>Static Demo</h3>
+            <p>HTML / CSS3 hardcoded with no javascript</p>
+            <div class="number-reel infinite">
+                <div class="reel-container">
+                    <i>$</i>
+                </div>
+                <div class="reel-container">
+                    <div class="reel-2">
+                        <i>5</i>
+                        <i>6</i>
+                        <i>7</i>
+                        <i>8</i>
+                        <i>9</i>
+                        <i>0</i>
+                        <i>1</i>
+                        <i>2</i>
+                        <i>3</i>
+                        <i>4</i>
+                        <i>5</i>
+                    </div>
+                    <div class="reel-1">
+                        <i>1</i>
+                        <i>2</i>
+                        <i>3</i>
+                        <i>4</i>
+                        <i>5</i>
+                        <i>6</i>
+                        <i>7</i>
+                        <i>8</i>
+                        <i>9</i>
+                        <i>0</i>
+                        <i>1</i>
+                    </div>
+                </div>
+                <div class="reel-container">
+                    <div class="reel-1">
+                        <i>0</i>
+                        <i>2</i>
+                        <i>3</i>
+                        <i>4</i>
+                        <i>5</i>
+                        <i>6</i>
+                        <i>7</i>
+                        <i>8</i>
+                        <i>9</i>
+                        <i>0</i>
+                        <i>1</i>
+                    </div>
+                    <div class="reel-2">
+                        <i>0</i>
+                        <i>6</i>
+                        <i>7</i>
+                        <i>8</i>
+                        <i>9</i>
+                        <i>0</i>
+                        <i>1</i>
+                        <i>2</i>
+                        <i>3</i>
+                        <i>4</i>
+                        <i>5</i>
+                    </div>	
+                    <div class="reel-1">
+                        <i>0</i>
+                        <i>2</i>
+                        <i>3</i>
+                        <i>4</i>
+                        <i>5</i>
+                        <i>6</i>
+                        <i>7</i>
+                        <i>8</i>
+                        <i>9</i>
+                        <i>0</i>
+                        <i>1</i>
+                    </div>
+                </div>
+                <div class="reel-container">
+                    <div class="reel-2">
+                        <i>0</i>
+                        <i>6</i>
+                        <i>7</i>
+                        <i>8</i>
+                        <i>9</i>
+                        <i>0</i>
+                        <i>1</i>
+                        <i>2</i>
+                        <i>3</i>
+                        <i>4</i>
+                        <i>5</i>
+                    </div>	
+                    <div class="reel-1">
+                        <i>0</i>
+                        <i>2</i>
+                        <i>3</i>
+                        <i>4</i>
+                        <i>5</i>
+                        <i>6</i>
+                        <i>7</i>
+                        <i>8</i>
+                        <i>9</i>
+                        <i>0</i>
+                        <i>1</i>
+                    </div>
+                    <div class="reel-2">
+                        <i>0</i>
+                        <i>6</i>
+                        <i>7</i>
+                        <i>8</i>
+                        <i>9</i>
+                        <i>0</i>
+                        <i>1</i>
+                        <i>2</i>
+                        <i>3</i>
+                        <i>4</i>
+                        <i>5</i>
+                    </div>
+                </div>
+                        
+            </div>
+            <br><br>
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/number-reel.js"></script>
+    <script type="text/javascript">
+    var example = $('#example');
+     var exampleBtn = $('#exampleBtn')
+
+    exampleBtn.on('click', function(){
+        
+        var number = Math.floor(Math.random() * 9999);
+
+        example.html(number).numberReel();
+        exampleBtn.next('em').html('you can click me over and over');
+    });
+
+
+    </script>
+  </body>
+</html>

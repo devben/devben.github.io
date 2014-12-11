@@ -1,0 +1,61 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+.container-fluid {
+  max-width: 960px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -100px;
+  /* Pad bottom by footer height */
+  padding: 0 0 100px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  background: #fff;
+  height: 100px;
+  text-align:center;
+  
+  
+}
+
+footer {
+  border-top: 2px solid @brand-primary;
+
+  .nav-pills {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    li {
+      display: inline-block;
+      float: none;
+
+      a {
+        background: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+
+ p {
+    line-height: 20px;
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+}

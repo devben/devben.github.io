@@ -1,0 +1,254 @@
+@headings-font-family:    'Open Sans', sans-serif;
+@headings-font-weight:    300;
+@brand-primary:           #27858F;
+@navbar-default-bg: fade(#fff, 50%);
+
+@navbar-default-border:  @brand-primary;
+// Navbar links
+@navbar-default-link-color:                @brand-primary;
+@navbar-default-link-hover-color:          darken(@brand-primary, 10%);
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:          @brand-primary;
+@navbar-default-link-active-bg:            transparent;
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
+@page-header-border-color: #ccc;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:          fade(#fff, 50%);
+@navbar-default-toggle-icon-bar-bg:        @brand-primary;
+@navbar-default-toggle-border-color:       transparent;
+
+/* Custom container */
+
+
+  //  @media (min-width: @grid-float-breakpoint) {
+  //     #navhover {
+    
+
+  //        &:hover {
+  //          .navbar-default {
+  //         top: 0px;
+  //       }
+  //       }
+  //     }
+  //    .navbar-default {
+  //       top: -55px;
+  //       .transition(.225s ease-in-out); 
+
+        
+  //     }
+
+     
+  // }
+.fork-me {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ .navbar-default .navbar-collapse {
+      border:none;
+      box-shadow:none;
+
+      a {
+        text-align: right;
+      }
+    }
+
+ .navbar-default {
+        border:none;
+    box-shadow:none;
+    border-radius:0;
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  }
+.homepage,
+.nav-white {
+    #navhover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      // display: block;
+      // height: 30vh;
+      overflow: visible;
+      z-index: 2;
+    }
+
+    .navbar-default .navbar-collapse {
+      border:none;
+      box-shadow:none;
+
+      a {
+        text-align: right;
+        padding-right: 20px;
+      }
+    }
+  .navbar-default {
+    background:none;
+
+
+    .navbar-toggle {
+      border:none;
+      background: none;
+      
+
+      .icon-bar {
+        background-color: #fff;
+        height: 3px;
+        .transition(.225s ease-in-out);
+
+
+      }
+        &:hover,
+        &:active {
+         .icon-bar {
+          background-color: fade(#fff, 50%);
+        }
+      }
+    }
+  }
+
+  .navbar-default .navbar-nav {
+    margin-bottom:0;
+
+  }
+  .navbar-default .navbar-nav,
+  .navbar-default {
+
+    a.navbar-brand,
+    a {
+       color: #fff;
+       .transition(.225s ease-in-out); 
+
+        &:hover,
+       &:active {
+        color: fade(#fff, 50%);
+      }
+    }
+   
+  }
+}
+
+/* posts index */
+.posts {
+  padding: 60px 0;
+  list-style: none;
+
+  article {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  .main {
+    padding-bottom: 20px;
+  }
+
+  li:last-child article{
+    border-color: transparent;
+  }
+
+  // .btn {
+  //   padding-left: 0;
+  // }
+
+  .demo-switch-container {
+    padding: 0 10px 10px;
+    float: right;
+  }
+
+  .demo2 {
+    float: right;
+    font-size: 30px;
+
+    .reel-seperator {
+      color: #fff;
+      float: left;
+      text-align: center;
+      background: #222;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 1em;
+      line-height: .99em;
+      margin: 0 .05em;
+      padding: 0 .1em;
+      border: .05 solid #000;
+      box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.25); 
+    }
+  }
+}
+
+.posts h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.post-date {
+  margin-top: 15px;
+  margin-right: 14px;
+  float: right;
+   .skew(-22.5deg,0);
+  // float: right;
+  // border: 1px solid @brand-primary;
+  background: #ccc;
+  color: #fff;
+  font-size: 11.5px; 
+  padding: 1px 5px;
+  display: inline-block;
+
+  time {
+    .skew(22.5deg,0);
+    display: inline-block;
+  }
+
+  .posts & {
+     margin-top: 22px;
+  }
+}
+
+.pad10 {
+  padding: 10px;
+}
+
+button.btn:active,
+button.btn:focus,
+button.btn:active:focus {
+  outline: none;
+}
+
+.btn-outline{
+  background: none;
+  border-width: 2px;
+  background: none;
+  border-color: @link-color;
+
+
+  &.btn-default {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+   &:focus {
+     background: none;
+   }
+
+  &:hover,
+  &:active {
+    background: fade(#000,5%);
+  }
+}
+
+
+.image-with-title {
+  font-size: 11.5px;
+  color: @gray-light;
+  font-style: italic;
+}

@@ -1,0 +1,24 @@
+
+{% if site.JB.post_list.provider == "custom" %}
+  {% include custom/post_list %}
+{% else %}
+ 
+
+  {% for node in post_list %}
+
+        <li {% if node.overviewClass %} class="{{node.overviewClass}}" {% endif %}>
+          <article  >
+            <span class="post-date"><time>{{ node.date | date_to_string }}</time></span>
+            <h2><a href="{{ BASE_PATH }}{{ node.url }}">{{ node.title }}</a></h2>
+            <div class="main">
+              {{node.description}}
+            </div>
+            <a class="btn btn-outline" title="{{ node.title }}" href="{{ BASE_PATH }}{{ node.url }}">Go to article</a>
+          </article>
+        </li>
+      	
+  {% endfor %}
+{% endif %}
+
+{% assign post_list = nil %}
+{% assign group = nil %}

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>DevBen</title>
+ <link href="http://devben.github.io/" rel="self"/>
+ <link href="http://devben.github.io"/>
+ <updated>2014-12-11T19:15:17+01:00</updated>
+ <id>http://devben.github.io</id>
+ <author>
+   <name>Ben Harrison</name>
+   <email>ben.harrison@outlook.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>CSS3 Checkbox Switch</title>
+   <link href="http://devben.github.io/css3/2014/10/10/css3-checkbox-switch"/>
+   <updated>2014-10-10T00:00:00+02:00</updated>
+   <id>http://devben.github.io/css3/2014/10/10/css3-checkbox-switch</id>
+   <content type="html">
+&lt;div class=&quot;toggle-switch-container&quot;&gt;
+  &lt;input id=&quot;switchToggle&quot; class=&quot;toggle-switch&quot; type=&quot;checkbox&quot; checked=&quot;&quot; /&gt;
+  &lt;label for=&quot;switchToggle&quot; data-switch-on=&quot;on&quot; data-switch-off=&quot;off&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Pure CSS3 check boxes, there is no javascript in this example and shuould work in IE9 +. There are many great examples of CSS3 checkboxes out there &lt;sup id=&quot;fnref:fn-css3-checkbox-examples&quot;&gt;&lt;a href=&quot;#fn:fn-css3-checkbox-examples&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and this is just another one.&lt;/p&gt;
+
+&lt;p&gt;To style the switch we are using &lt;code&gt;:before&lt;/code&gt;, &lt;code&gt;:after&lt;/code&gt; pseudo-elements and  &lt;code&gt;+&lt;/code&gt; adjacent sibling selector. Then using the &lt;code&gt;:checked&lt;/code&gt; pseudo selector we can update the styles depending on the checkbox state.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;input[type=&quot;checkbox&quot;]:checked + label {  
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This example also uses &lt;strong&gt;data-attributes&lt;/strong&gt; to provide labels via css. In the html we are using &lt;code&gt;data-switch-on=&quot;yes&quot; data-switch-off=&quot;no&quot;&lt;/code&gt; and the rendering the content via css using &lt;code&gt;content: attr(data-switch-on);&lt;/code&gt; and &lt;code&gt;content: attr(data-switch-off);&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;toggle-switch-container&quot;&gt;
+  &lt;input id=&quot;switchToggle4&quot; class=&quot;toggle-switch toggle-switch-wide&quot; type=&quot;checkbox&quot; /&gt;
+  &lt;label for=&quot;switchToggle4&quot; data-switch-on=&quot;Sign me up&quot; data-switch-off=&quot;No Thanks&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can simply make the switch wider to allow for longer labels by just increasing the width in the css, in this example  &lt;code&gt;.toggle-switch-wide&lt;/code&gt; contains the css for the  &lt;strong&gt;wider version&lt;/strong&gt; of the switch.&lt;/p&gt;
+
+&lt;p&gt;Check out the pen with more examples and the raw .less&lt;/p&gt;
+
+&lt;p data-height=&quot;330&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;tHyGc&quot; data-default-tab=&quot;result&quot; data-user=&quot;devben&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/devben/pen/tHyGc/&quot;&gt;tHyGc&lt;/a&gt; by ben (&lt;a href=&quot;http://codepen.io/devben&quot;&gt;@devben&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:fn-css3-checkbox-examples&quot;&gt;
+      &lt;p&gt;Nice flat design CSS3 toggle switchs  - &lt;a href=&quot;http://callmenick.com/2014/05/13/css-toggle-switch-examples/&quot; title=&quot;CSS Toggle Switch&quot;&gt;http://callmenick.com/2014/05/13/css-toggle-switch-examples/&lt;/a&gt;  &lt;br /&gt;Tutorial on basic principle from webdesign.tutsplus.com  - &lt;a href=&quot;http://webdesign.tutsplus.com/articles/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953&amp;quot;tutsplus.com&amp;quot;&quot;&gt;http://webdesign.tutsplus.com/articles/quick-tip-easy-css3-checkboxes-and-radio-buttons–webdesign-8953&lt;/a&gt; &lt;a href=&quot;#fnref:fn-css3-checkbox-examples&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>CSS3 Number Reel</title>
+   <link href="http://devben.github.io/js%20plugin/2014/07/22/number-reel"/>
+   <updated>2014-07-22T00:00:00+02:00</updated>
+   <id>http://devben.github.io/js%20plugin/2014/07/22/number-reel</id>
+   <content type="html">
+&lt;p&gt;I wanted create a CSS animated reel of numbers so wrote this little plugin. Animation can be initalized &lt;strong&gt;programatically&lt;/strong&gt; &lt;code&gt;el.numberReel&lt;/code&gt; or using &lt;strong&gt;data-attributes&lt;/strong&gt; &lt;code&gt;data-trigger=&quot;numberReel&quot;&lt;/code&gt;. At the time of writing the plugin take thes following &lt;a href=&quot;#options&quot;&gt;options&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;demo&quot;&gt;&lt;div data-trigger=&quot;numberReel&quot;&gt;191919&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div data-trigger=&quot;numberReel&quot;&amp;gt;191919&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;demo&quot;&gt;&lt;div class=&quot;number&quot;&gt;292929&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#39;.number&#39;).numberReel({
+    infinite:true
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;demo2&quot;&gt;&lt;div data-trigger=&quot;numberReel&quot; data-thousands=&quot;true&quot; data-currency=&quot;£&quot;&gt;9999999&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div data-trigger=&quot;numberReel&quot; data-thousands=&quot;true&quot; data-currency=&quot;£&quot;&amp;gt;9999999&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;onclick&quot;&gt;onClick&lt;/h2&gt;
+
+&lt;div class=&quot;demo-click&quot;&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;&lt;button class=&quot;btn btn-primary&quot; data-trigger=&quot;clickme&quot; type=&quot;button&quot;&gt;clickme&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;demo&quot;&gt;&lt;div id=&quot;onClick&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class=&quot;help-block hide&quot; data-msg=&quot;helpText&quot;&gt;you can click me multiple times&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;var btn = $(&#39;[data-trigger=&quot;clickme&quot;]&#39;);
+var numbers = $(&#39;#onClick&#39;);
+
+btn.on(&#39;click&#39;, function(){
+    var number = Math.floor(Math.random() * 9999);
+    numbers.html(number).numberReel();
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;options&quot;&gt;Options&lt;/h2&gt;
+
+&lt;table class=&quot;table&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;name&lt;/th&gt;
+                        &lt;th&gt;type&lt;/th&gt;
+                        &lt;th&gt;default&lt;/th&gt;
+                        &lt;th&gt;description&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                     &lt;tr&gt;
+                        &lt;td&gt;wrapper&lt;/td&gt;
+                        &lt;td&gt;string&lt;/td&gt;
+                        &lt;td nowrap=&quot;&quot;&gt;&#39;number-reel&#39;&lt;/td&gt;
+                        &lt;td&gt;wrapping div.class&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;currency&lt;/td&gt;
+                        &lt;td&gt;string&lt;/td&gt;
+                        &lt;td&gt;&#39;$&#39;&lt;/td&gt;
+                        &lt;td&gt;Prepend a currecy symbol or any string. &lt;code&gt;&#39;&#39;&lt;/code&gt;, prepends NULL&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;infinite&lt;/td&gt;
+                        &lt;td&gt;boolean&lt;/td&gt;
+                        &lt;td&gt;false&lt;/td&gt;
+                        &lt;td&gt;&lt;code&gt;true&lt;/code&gt; animates the numbers continuously with the addition of &lt;code&gt;.infinite&lt;/code&gt;, a small delay is present which is configurable in the CSS. &lt;code&gt;false&lt;/code&gt; animates only once.&lt;/td&gt;
+                    &lt;/tr&gt;
+                   &lt;!--  &lt;tr&gt;
+                        &lt;td&gt;reelFace&lt;/td&gt;
+                        &lt;td&gt;number&lt;/td&gt;
+                        &lt;td&gt;9&lt;/td&gt;
+                        &lt;td&gt;appends X other numbers, in a random order, to use in the animation&lt;/td&gt;
+                    &lt;/tr&gt; --&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;thousands&lt;/td&gt;
+                        &lt;td&gt;boolean&lt;/td&gt;
+                        &lt;td&gt;false&lt;/td&gt;
+                        &lt;td&gt;groups numbers reels in 3&#39;s to add styling for thousand seperated numbers. i.e 1 000 000&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
