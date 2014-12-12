@@ -18,7 +18,7 @@ group: navigation
 <!-- Tab panes -->
 <div class="tab-content">
    {% for tag in site.tags %}
-         <div class="tab-pane" id="{{ tag[0] }}-ref">
+         <div class="tab-pane" id="{{ tag[0] | replace: ' ',''  }}-ref">
         <h2 >{{ tag[0] }}</h2>
         <ul>
     {% assign pages_list = tag[1] %}  

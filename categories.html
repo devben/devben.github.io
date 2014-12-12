@@ -18,9 +18,9 @@ group: navigation
 <div class="tab-content">
     {% for category in site.categories %} 
         {% if categories_list.first[0] %}
-     <div class="tab-pane active" id="{{ category[0] }}-ref">
+     <div class="tab-pane active" id="{{ category[0] | replace: ' ',''}}-ref">
         {% endif %}
-         <div class="tab-pane" id="{{ category[0] }}-ref">
+         <div class="tab-pane" id="{{ category[0] |replace: ' ','' }}-ref">
         <h2 >{{ category[0] | join: "/" }}</h2>
          <ul>
             {% assign pages_list = category[1] %}  
