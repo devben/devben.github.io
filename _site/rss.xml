@@ -5,10 +5,24 @@
         <description>DevBen - Ben Harrison</description>
         <link>http://devben.github.io</link>
         <link>http://devben.github.io</link>
-        <lastBuildDate>2014-12-12T09:52:01+01:00</lastBuildDate>
-        <pubDate>2014-12-12T09:52:01+01:00</pubDate>
+        <lastBuildDate>2015-02-25T21:49:46+01:00</lastBuildDate>
+        <pubDate>2015-02-25T21:49:46+01:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Bootstrap 3 tab navigation drop down</title>
+                <description>
+&lt;p&gt;A little extra CSS applied to the default bootstrap tabs and some jquery to toggle the navigation and you can use and alternative approach to the tab navigation.&lt;/p&gt;
+
+&lt;p data-height=&quot;320&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;EaLdeJ&quot; data-default-tab=&quot;result&quot; data-user=&quot;devben&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/devben/pen/EaLdeJ/&quot;&gt;Responsive bootstrap tabs&lt;/a&gt; by ben (&lt;a href=&quot;http://codepen.io/devben&quot;&gt;@devben&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+</description>
+                <link>http://devben.github.io/css/2015/02/25/bootstrap-3-tab-navigation-drop-down</link>
+                <guid>http://devben.github.io/css/2015/02/25/bootstrap-3-tab-navigation-drop-down</guid>
+                <pubDate>2015-02-25T00:00:00+01:00</pubDate>
+        </item>
 
         <item>
                 <title>CSS3 Checkbox Switch</title>

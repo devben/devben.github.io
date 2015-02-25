@@ -4,13 +4,27 @@
  <title>DevBen</title>
  <link href="http://devben.github.io/" rel="self"/>
  <link href="http://devben.github.io"/>
- <updated>2014-12-12T09:52:01+01:00</updated>
+ <updated>2015-02-25T21:49:46+01:00</updated>
  <id>http://devben.github.io</id>
  <author>
    <name>Ben Harrison</name>
    <email>ben.harrison@outlook.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Bootstrap 3 tab navigation drop down</title>
+   <link href="http://devben.github.io/css/2015/02/25/bootstrap-3-tab-navigation-drop-down"/>
+   <updated>2015-02-25T00:00:00+01:00</updated>
+   <id>http://devben.github.io/css/2015/02/25/bootstrap-3-tab-navigation-drop-down</id>
+   <content type="html">
+&lt;p&gt;A little extra CSS applied to the default bootstrap tabs and some jquery to toggle the navigation and you can use and alternative approach to the tab navigation.&lt;/p&gt;
+
+&lt;p data-height=&quot;320&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;EaLdeJ&quot; data-default-tab=&quot;result&quot; data-user=&quot;devben&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/devben/pen/EaLdeJ/&quot;&gt;Responsive bootstrap tabs&lt;/a&gt; by ben (&lt;a href=&quot;http://codepen.io/devben&quot;&gt;@devben&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>CSS3 Checkbox Switch</title>
