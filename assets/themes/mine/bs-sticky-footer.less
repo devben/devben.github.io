@@ -7,8 +7,16 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 
-.container-fluid {
+.container-fluid,
+#footer .container-fluid {
   max-width: 960px;
+
+
+  .container-outer & {
+    max-width: 820px;
+  }
+
+
 }
 
 /* Wrapper for page content to push down footer */
